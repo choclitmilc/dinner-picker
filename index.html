@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>&#25903;&#23567;&#23567;&#22823;&#29579;&#20170;&#22825;&#24819;&#21507;&#20160;&#20040;&#65311;</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="app-shell">
+      <section class="hero" aria-labelledby="page-title">
+        <div class="hero-art" aria-hidden="true">
+          <div class="plate">
+            <span class="steam steam-one"></span>
+            <span class="steam steam-two"></span>
+            <span class="steam steam-three"></span>
+            <div class="bowl">
+              <span class="rice"></span>
+              <span class="topping topping-one"></span>
+              <span class="topping topping-two"></span>
+              <span class="topping topping-three"></span>
+            </div>
+            <span class="chopstick chopstick-one"></span>
+            <span class="chopstick chopstick-two"></span>
+          </div>
+        </div>
+        <div class="hero-copy">
+          <p class="eyebrow">For your favorite dinner guest</p>
+          <h1 id="page-title">&#25903;&#23567;&#23567;&#22823;&#29579;&#20170;&#22825;&#24819;&#21507;&#20160;&#20040;&#65311;</h1>
+          <p>
+            &#32473;&#22905;&#19968;&#20010;&#27599;&#22825;&#37117;&#33021;&#28857;&#33756;&#30340;&#23567;&#35282;&#33853;&#12290;&#36873;&#21475;&#21619;&#12289;&#25353;&#24515;&#24773;&#65292;&#25110;&#32773;&#30452;&#25509;&#25226;&#36873;&#25321;&#26435;&#20132;&#32473;&#20170;&#22825;&#30340;&#39277;&#26700;&#12290;
+          </p>
+        </div>
+      </section>
+
+      <section class="decision-panel" aria-label="&#20170;&#26085;&#28857;&#33756;">
+        <div class="controls">
+          <div>
+            <span class="control-label">&#24515;&#24773;</span>
+            <div class="segmented" id="moodFilters" role="group" aria-label="&#25353;&#24515;&#24773;&#31579;&#36873;"></div>
+          </div>
+          <div>
+            <span class="control-label">&#26102;&#38388;</span>
+            <div class="segmented" id="timeFilters" role="group" aria-label="&#25353;&#28921;&#39274;&#26102;&#38388;&#31579;&#36873;"></div>
+          </div>
+        </div>
+
+        <div class="pick-area">
+          <article class="featured-dish" id="featuredDish" aria-live="polite"></article>
+          <div class="action-strip">
+            <button class="primary-button" id="surpriseButton" type="button">
+              <span aria-hidden="true">&circlearrowright;</span>
+              &#25442;&#19968;&#20010;
+            </button>
+            <button class="secondary-button" id="favoriteButton" type="button">
+              <span aria-hidden="true">&hearts;</span>
+              &#25910;&#34255;
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section class="content-grid">
+        <div class="dish-section">
+          <div class="section-heading">
+            <h2>&#33756;&#21333;&#27744;</h2>
+            <span id="dishCount"></span>
+          </div>
+          <div class="dish-grid" id="dishGrid"></div>
+        </div>
+
+        <aside class="side-panel">
+          <div class="mini-panel">
+            <h2>&#22905;&#30340;&#25910;&#34255;</h2>
+            <div class="favorite-list" id="favoriteList"></div>
+          </div>
+
+          <form class="mini-panel add-form" id="dishForm">
+            <h2>&#21152;&#19968;&#36947;&#31169;&#25151;&#33756;</h2>
+            <label>
+              &#33756;&#21517;
+              <input id="dishName" name="dishName" type="text" maxlength="18" placeholder="&#27604;&#22914;&#65306;&#30058;&#33540;&#29275;&#33129;" required />
+            </label>
+            <label>
+              &#23567;&#22791;&#27880;
+              <input id="dishNote" name="dishNote" type="text" maxlength="42" placeholder="&#22905;&#21916;&#27426;&#22810;&#19968;&#28857;&#27748;&#27713;" />
+            </label>
+            <label>
+              &#33756;&#30340;&#29031;&#29255;
+              <input id="dishPhoto" name="dishPhoto" type="file" accept="image/*" />
+            </label>
+            <button class="secondary-button" type="submit">
+              <span aria-hidden="true">+</span>
+              &#21152;&#36827;&#33756;&#21333;
+            </button>
+          </form>
+        </aside>
+      </section>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
