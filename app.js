@@ -130,9 +130,9 @@ function getDishProfile(name) {
 }
 
 function getDishPhoto(name) {
-  if (hasAny(name, [u("\\u9762"), u("\\u996d"), u("\\u82b1\\u751f")])) return "images/staple.svg";
-  if (hasAny(name, [u("\\u767d\\u83dc"), u("\\u5305\\u83dc"), u("\\u7a7a\\u5fc3\\u83dc"), u("\\u751f\\u83dc"), u("\\u9752\\u83dc"), u("\\u85d5\\u7247"), u("\\u8c46\\u89d2"), u("\\u9ec4\\u74dc"), u("\\u674f\\u9c8d\\u83c7"), u("\\u8c46\\u8150")])) return "images/vegetable-dish.svg";
-  return "images/meat.svg";
+  if (hasAny(name, [u("\\u9762"), u("\\u996d"), u("\\u82b1\\u751f")])) return "images/staple.svg?v=classic-1";
+  if (hasAny(name, [u("\\u767d\\u83dc"), u("\\u5305\\u83dc"), u("\\u7a7a\\u5fc3\\u83dc"), u("\\u751f\\u83dc"), u("\\u9752\\u83dc"), u("\\u85d5\\u7247"), u("\\u8c46\\u89d2"), u("\\u9ec4\\u74dc"), u("\\u674f\\u9c8d\\u83c7"), u("\\u8c46\\u8150")])) return "images/vegetable-dish.svg?v=classic-1";
+  return "images/meat.svg?v=classic-1";
 }
 
 function makeNote(name, profile) {
