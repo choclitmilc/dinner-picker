@@ -1,82 +1,14 @@
 [
   {
-    "file": "images/cola-chicken.png",
-    "source": "Generated locally as a custom cartoon illustration for this project.",
-    "license": "Project-owned generated asset"
+    "file": "images/meat.svg",
+    "source": "Generated locally as a custom cartoon category illustration for meat dishes."
   },
   {
-    "file": "images/chicken-wings.png",
-    "source": "Generated locally as a custom cartoon illustration for this project.",
-    "license": "Project-owned generated asset"
+    "file": "images/vegetable-dish.svg",
+    "source": "Generated locally as a custom cartoon category illustration for vegetable dishes."
   },
   {
-    "file": "images/spicy-chicken.png",
-    "source": "Generated locally as a custom cartoon illustration for this project.",
-    "license": "Project-owned generated asset"
-  },
-  {
-    "file": "images/curry-chicken.png",
-    "source": "Generated locally as a custom cartoon illustration for this project.",
-    "license": "Project-owned generated asset"
-  },
-  {
-    "file": "images/teriyaki-chicken.png",
-    "source": "Generated locally as a custom cartoon illustration for this project.",
-    "license": "Project-owned generated asset"
-  },
-  {
-    "file": "images/pork-belly.png",
-    "source": "Generated locally as a custom cartoon illustration for this project.",
-    "license": "Project-owned generated asset"
-  },
-  {
-    "file": "images/ribs.png",
-    "source": "Generated locally as a custom cartoon illustration for this project.",
-    "license": "Project-owned generated asset"
-  },
-  {
-    "file": "images/beef.png",
-    "source": "Generated locally as a custom cartoon illustration for this project.",
-    "license": "Project-owned generated asset"
-  },
-  {
-    "file": "images/tofu.png",
-    "source": "Generated locally as a custom cartoon illustration for this project.",
-    "license": "Project-owned generated asset"
-  },
-  {
-    "file": "images/vegetable.png",
-    "source": "Generated locally as a custom cartoon illustration for this project.",
-    "license": "Project-owned generated asset"
-  },
-  {
-    "file": "images/tomato-egg.png",
-    "source": "Generated locally as a custom cartoon illustration for this project.",
-    "license": "Project-owned generated asset"
-  },
-  {
-    "file": "images/fried-rice.png",
-    "source": "Generated locally as a custom cartoon illustration for this project.",
-    "license": "Project-owned generated asset"
-  },
-  {
-    "file": "images/noodles.png",
-    "source": "Generated locally as a custom cartoon illustration for this project.",
-    "license": "Project-owned generated asset"
-  },
-  {
-    "file": "images/cucumber.png",
-    "source": "Generated locally as a custom cartoon illustration for this project.",
-    "license": "Project-owned generated asset"
-  },
-  {
-    "file": "images/peanuts.png",
-    "source": "Generated locally as a custom cartoon illustration for this project.",
-    "license": "Project-owned generated asset"
-  },
-  {
-    "file": "images/mushroom.png",
-    "source": "Generated locally as a custom cartoon illustration for this project.",
-    "license": "Project-owned generated asset"
+    "file": "images/staple.svg",
+    "source": "Generated locally as a custom cartoon category illustration for staple foods."
   }
 ]
