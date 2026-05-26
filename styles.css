@@ -516,6 +516,22 @@ h2 {
   gap: 12px;
 }
 
+.site-footer {
+  padding: 22px 0 0;
+  text-align: center;
+}
+
+.site-footer a {
+  color: var(--muted);
+  font-size: 0.82rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.site-footer a:hover {
+  color: var(--rose);
+}
+
 label {
   display: grid;
   gap: 7px;
