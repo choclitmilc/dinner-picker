@@ -50,7 +50,6 @@ const dishNames = [
 const moodOptions = [
   u("\\u5168\\u90e8"),
   u("\\u6696\\u6696\\u7684"),
-  u("\\u60f3\\u88ab\\u5ba0"),
   u("\\u60f3\\u5403\\u9999\\u7684"),
   u("\\u60f3\\u5403\\u8fa3\\u7684"),
   u("\\u6e05\\u723d\\u70b9"),
@@ -129,7 +128,7 @@ function getDishProfile(name) {
   if (tags.length === 0) tags.push(u("\\u5bb6\\u5e38"));
 
   return {
-    mood: spicy ? u("\\u60f3\\u5403\\u8fa3\\u7684") : light ? u("\\u6e05\\u723d\\u70b9") : comfort ? u("\\u60f3\\u88ab\\u5ba0") : u("\\u60f3\\u5403\\u9999\\u7684"),
+    mood: spicy ? u("\\u60f3\\u5403\\u8fa3\\u7684") : light ? u("\\u6e05\\u723d\\u70b9") : comfort ? u("\\u6696\\u6696\\u7684") : u("\\u60f3\\u5403\\u9999\\u7684"),
     time: slow ? u("\\u6162\\u6162\\u7096") : u("\\u5f88\\u5feb"),
     photo: getDishPhoto(name),
     tags: [...new Set(tags)].slice(0, 3),
@@ -356,7 +355,7 @@ async function addCustomDish(event) {
     id: `custom-${Date.now()}`,
     name,
     note,
-    mood: u("\\u60f3\\u88ab\\u5ba0"),
+    mood: u("\\u60f3\\u5403\\u9999\\u7684"),
     time: u("\\u5f88\\u5feb"),
     photo,
     icon: "\u2665",
