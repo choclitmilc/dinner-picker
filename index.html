@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>&#25903;&#23567;&#23567;&#22823;&#29579;&#20170;&#22825;&#24819;&#21507;&#20160;&#20040;&#65311;</title>
-    <link rel="stylesheet" href="styles.css?v=classic-1" />
+    <link rel="stylesheet" href="styles.css?v=wheel-1" />
   </head>
   <body>
     <main class="app-shell">
@@ -60,6 +60,26 @@
         </div>
       </section>
 
+      <section class="wheel-panel" aria-labelledby="wheel-title">
+        <div class="section-heading">
+          <h2 id="wheel-title">&#20170;&#26085;&#36716;&#30424;</h2>
+          <span id="wheelCount"></span>
+        </div>
+        <div class="wheel-layout">
+          <div class="wheel-stage">
+            <div class="wheel-pointer" aria-hidden="true"></div>
+            <div class="dish-wheel" id="dishWheel" aria-hidden="true"></div>
+            <div class="wheel-center">
+              <strong id="wheelResult">&#31561;&#19968;&#36947;&#33756;</strong>
+            </div>
+          </div>
+          <button class="primary-button wheel-button" id="spinWheelButton" type="button">
+            <span aria-hidden="true">&circlearrowright;</span>
+            &#24320;&#22987;&#36716;
+          </button>
+        </div>
+      </section>
+
       <section class="content-grid">
         <div class="dish-section">
           <div class="section-heading">
@@ -101,6 +121,6 @@
       </footer>
     </main>
 
-    <script src="app.js?v=classic-1"></script>
+    <script src="app.js?v=wheel-1"></script>
   </body>
 </html>

@@ -91,9 +91,16 @@ const dishGrid = document.querySelector("#dishGrid");
 const dishCount = document.querySelector("#dishCount");
 const favoriteButton = document.querySelector("#favoriteButton");
 const surpriseButton = document.querySelector("#surpriseButton");
+const dishWheel = document.querySelector("#dishWheel");
+const wheelCount = document.querySelector("#wheelCount");
+const wheelResult = document.querySelector("#wheelResult");
+const spinWheelButton = document.querySelector("#spinWheelButton");
 const favoriteList = document.querySelector("#favoriteList");
 const dishForm = document.querySelector("#dishForm");
 const dishPhoto = document.querySelector("#dishPhoto");
+const wheelColors = ["#c85157", "#f7b4bd", "#f2b84b", "#4f8b61", "#527c99", "#e16a4d"];
+let wheelRotation = 0;
+let wheelSpinning = false;
 
 function slugify(value) {
   return Array.from(value)
@@ -184,6 +191,54 @@ function pickRandomDish() {
   const pool = getFilteredDishes();
   selectedDish = pool[Math.floor(Math.random() * pool.length)] ?? getAllDishes()[0];
   render();
+}
+
+function buildWheelBackground(dishes) {
+  const step = 360 / dishes.length;
+  const slices = dishes.map((dish, index) => {
+    const color = wheelColors[index % wheelColors.length];
+    const start = (index * step).toFixed(3);
+    const end = ((index + 1) * step).toFixed(3);
+    return `${color} ${start}deg ${end}deg`;
+  });
+  return `conic-gradient(from -90deg, ${slices.join(", ")})`;
+}
+
+function renderWheel() {
+  const dishes = getAllDishes();
+  dishWheel.style.background = buildWheelBackground(dishes);
+  dishWheel.style.transform = `rotate(${wheelRotation}deg)`;
+  wheelCount.textContent = `${dishes.length} ${u("\\u9053\\u5165\\u76d8")}`;
+  wheelResult.textContent = selectedDish?.name ?? u("\\u7b49\\u4e00\\u9053\\u83dc");
+}
+
+function spinWheel() {
+  if (wheelSpinning) return;
+
+  const dishes = getAllDishes();
+  const winnerIndex = Math.floor(Math.random() * dishes.length);
+  const winner = dishes[winnerIndex];
+  const step = 360 / dishes.length;
+  const sliceCenter = winnerIndex * step + step / 2;
+  const currentNormalized = ((wheelRotation % 360) + 360) % 360;
+  const targetAtPointer = 360 - sliceCenter;
+  const extraTurns = 360 * 6;
+  const delta = extraTurns + ((targetAtPointer - currentNormalized + 360) % 360);
+
+  wheelSpinning = true;
+  spinWheelButton.disabled = true;
+  wheelResult.textContent = u("\\u8f6c\\u8d77\\u6765");
+  wheelRotation += delta;
+  dishWheel.style.transform = `rotate(${wheelRotation}deg)`;
+
+  window.setTimeout(() => {
+    selectedDish = winner;
+    wheelResult.textContent = winner.name;
+    wheelSpinning = false;
+    spinWheelButton.disabled = false;
+    render();
+    featuredDish.scrollIntoView({ behavior: "smooth", block: "center" });
+  }, 4300);
 }
 
 function renderFilterButtons(target, options, key) {
@@ -322,6 +377,7 @@ function render() {
   renderFilterButtons(moodFilters, moodOptions, "mood");
   renderFilterButtons(timeFilters, timeOptions, "time");
   renderFeaturedDish();
+  renderWheel();
   renderDishGrid();
   renderFavorites();
 }
@@ -329,5 +385,6 @@ function render() {
 surpriseButton.addEventListener("click", pickRandomDish);
 favoriteButton.addEventListener("click", toggleFavorite);
 dishForm.addEventListener("submit", addCustomDish);
+spinWheelButton.addEventListener("click", spinWheel);
 
 pickRandomDish();
