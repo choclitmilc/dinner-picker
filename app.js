@@ -130,23 +130,23 @@ function getDishProfile(name) {
 }
 
 function getDishPhoto(name) {
-  if (name.includes(u("\\u53ef\\u4e50\\u9e21\\u7fc5"))) return "images/cola-chicken.jpg";
-  if (name.includes(u("\\u9e21\\u7fc5"))) return "images/chicken-wings.jpg";
-  if (hasAny(name, [u("\\u9999\\u8fa3"), u("\\u53e3\\u6c34"), u("\\u8fa3\\u6912")])) return "images/spicy-chicken.jpg";
-  if (name.includes(u("\\u5496\\u55b1"))) return "images/curry-chicken.jpg";
-  if (name.includes(u("\\u7167\\u70e7"))) return "images/teriyaki-chicken.jpg";
-  if (hasAny(name, [u("\\u6392\\u9aa8"), u("\\u5c0f\\u6392"), u("\\u725b\\u4ed4\\u9aa8")])) return "images/ribs.jpg";
-  if (name.includes(u("\\u7ea2\\u70e7\\u8089"))) return "images/pork-belly.jpg";
-  if (name.includes(u("\\u725b"))) return "images/beef.jpg";
-  if (name.includes(u("\\u8c46\\u8150"))) return "images/tofu.jpg";
-  if (name.includes(u("\\u897f\\u7ea2\\u67ff\\u7092\\u9e21\\u86cb"))) return "images/tomato-egg.jpg";
-  if (name.includes(u("\\u7092\\u996d")) || name.includes(u("\\u83dc\\u996d"))) return "images/fried-rice.jpg";
-  if (name.includes(u("\\u9762"))) return "images/noodles.jpg";
-  if (name.includes(u("\\u82b1\\u751f"))) return "images/peanuts.jpg";
-  if (name.includes(u("\\u674f\\u9c8d\\u83c7"))) return "images/mushroom.jpg";
-  if (name.includes(u("\\u9ec4\\u74dc"))) return "images/cucumber.jpg";
-  if (hasAny(name, [u("\\u767d\\u83dc"), u("\\u5305\\u83dc"), u("\\u7a7a\\u5fc3\\u83dc"), u("\\u751f\\u83dc"), u("\\u9752\\u83dc"), u("\\u85d5\\u7247"), u("\\u82b9\\u83dc"), u("\\u849c\\u82d4"), u("\\u8c46\\u89d2")])) return "images/vegetable.jpg";
-  return "images/chicken-wings.jpg";
+  if (name.includes(u("\\u53ef\\u4e50\\u9e21\\u7fc5"))) return "images/cola-chicken.png";
+  if (name.includes(u("\\u9e21\\u7fc5"))) return "images/chicken-wings.png";
+  if (hasAny(name, [u("\\u9999\\u8fa3"), u("\\u53e3\\u6c34"), u("\\u8fa3\\u6912")])) return "images/spicy-chicken.png";
+  if (name.includes(u("\\u5496\\u55b1"))) return "images/curry-chicken.png";
+  if (name.includes(u("\\u7167\\u70e7"))) return "images/teriyaki-chicken.png";
+  if (hasAny(name, [u("\\u6392\\u9aa8"), u("\\u5c0f\\u6392"), u("\\u725b\\u4ed4\\u9aa8")])) return "images/ribs.png";
+  if (name.includes(u("\\u7ea2\\u70e7\\u8089"))) return "images/pork-belly.png";
+  if (name.includes(u("\\u725b"))) return "images/beef.png";
+  if (name.includes(u("\\u8c46\\u8150"))) return "images/tofu.png";
+  if (name.includes(u("\\u897f\\u7ea2\\u67ff\\u7092\\u9e21\\u86cb"))) return "images/tomato-egg.png";
+  if (name.includes(u("\\u7092\\u996d")) || name.includes(u("\\u83dc\\u996d"))) return "images/fried-rice.png";
+  if (name.includes(u("\\u9762"))) return "images/noodles.png";
+  if (name.includes(u("\\u82b1\\u751f"))) return "images/peanuts.png";
+  if (name.includes(u("\\u674f\\u9c8d\\u83c7"))) return "images/mushroom.png";
+  if (name.includes(u("\\u9ec4\\u74dc"))) return "images/cucumber.png";
+  if (hasAny(name, [u("\\u767d\\u83dc"), u("\\u5305\\u83dc"), u("\\u7a7a\\u5fc3\\u83dc"), u("\\u751f\\u83dc"), u("\\u9752\\u83dc"), u("\\u85d5\\u7247"), u("\\u82b9\\u83dc"), u("\\u849c\\u82d4"), u("\\u8c46\\u89d2")])) return "images/vegetable.png";
+  return "images/chicken-wings.png";
 }
 
 function makeNote(name, profile) {

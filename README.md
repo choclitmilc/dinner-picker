@@ -2,6 +2,6 @@
 
 A tiny static dinner picker for choosing what to cook.
 
-## Image Credits
+## Images
 
-The dish images are Creative Commons images found through Openverse and Wikimedia Commons. See `images/image-sources.json` for source URLs and license metadata.
+The dish images are custom cartoon assets generated locally for this project. See `images/image-sources.json` for the asset list.
