@@ -1,17 +1,17 @@
 :root {
   color-scheme: light;
-  --bg: #fff9f2;
-  --ink: #33251d;
-  --muted: #75645a;
-  --paper: #fffdf8;
-  --line: #ead9c9;
-  --rose: #c85157;
-  --pink: #f7b4bd;
-  --tomato: #e16a4d;
-  --leaf: #4f8b61;
-  --gold: #f2b84b;
-  --blue: #527c99;
-  --shadow: 0 18px 48px rgba(68, 43, 27, 0.14);
+  --bg: #fff3f8;
+  --ink: #4b2b39;
+  --muted: #8c6676;
+  --paper: #fffafd;
+  --line: #f4cdda;
+  --rose: #e9789a;
+  --pink: #ffc3d7;
+  --tomato: #f28da8;
+  --leaf: #8ecf98;
+  --gold: #ffd36a;
+  --blue: #9dbddd;
+  --shadow: 0 18px 48px rgba(191, 92, 130, 0.14);
 }
 
 * {
@@ -22,9 +22,10 @@ body {
   margin: 0;
   min-height: 100vh;
   background:
-    radial-gradient(circle at 10% 12%, rgba(247, 180, 189, 0.32) 0 82px, transparent 84px),
-    radial-gradient(circle at 88% 18%, rgba(242, 184, 75, 0.22) 0 92px, transparent 94px),
-    radial-gradient(circle at 80% 92%, rgba(79, 139, 97, 0.16) 0 130px, transparent 132px),
+    radial-gradient(circle at 10% 12%, rgba(255, 195, 215, 0.62) 0 82px, transparent 84px),
+    radial-gradient(circle at 88% 18%, rgba(255, 233, 241, 0.9) 0 92px, transparent 94px),
+    radial-gradient(circle at 80% 92%, rgba(255, 190, 210, 0.32) 0 130px, transparent 132px),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.65), transparent 38%),
     var(--bg);
   color: var(--ink);
   font-family: Inter, "PingFang SC", "Microsoft YaHei", sans-serif;
@@ -56,14 +57,14 @@ button {
 }
 
 .hero::after {
-  content: "made with love";
+  content: "sweet little menu";
   position: absolute;
   right: 4px;
   bottom: 20px;
   transform: rotate(-5deg);
-  border: 2px dashed rgba(200, 81, 87, 0.35);
+  border: 2px dashed rgba(233, 120, 154, 0.46);
   border-radius: 999px;
-  background: rgba(255, 253, 248, 0.8);
+  background: rgba(255, 250, 253, 0.86);
   color: var(--rose);
   padding: 8px 14px;
   font-size: 0.76rem;
@@ -118,8 +119,8 @@ h1 {
   aspect-ratio: 1;
   border-radius: 50%;
   background:
-    radial-gradient(circle at 50% 54%, #fff 0 34%, #f7e4d6 35% 48%, #d86d54 49% 52%, transparent 53%),
-    radial-gradient(circle at 48% 48%, #fff7ee 0 58%, #eecfba 59% 69%, transparent 70%);
+    radial-gradient(circle at 50% 54%, #fff 0 34%, #ffe2ec 35% 48%, #f28dad 49% 52%, transparent 53%),
+    radial-gradient(circle at 48% 48%, #fffafd 0 58%, #ffd0df 59% 69%, transparent 70%);
   box-shadow: var(--shadow);
 }
 
@@ -130,7 +131,7 @@ h1 {
   bottom: 28%;
   height: 30%;
   border-radius: 18px 18px 74px 74px;
-  background: linear-gradient(180deg, #467c98 0 38%, #2e5d73 39% 100%);
+  background: linear-gradient(180deg, #f79bbb 0 38%, #dc6f98 39% 100%);
   overflow: hidden;
 }
 
@@ -173,7 +174,7 @@ h1 {
   width: 18px;
   height: 74px;
   border-radius: 50%;
-  border-left: 4px solid rgba(200, 81, 87, 0.34);
+  border-left: 4px solid rgba(233, 120, 154, 0.34);
   animation: floatSteam 2.6s ease-in-out infinite;
 }
 
@@ -198,7 +199,7 @@ h1 {
   right: 5%;
   top: 34%;
   border-radius: 999px;
-  background: #8b5739;
+  background: #a35a76;
   transform: rotate(-26deg);
 }
 
@@ -223,10 +224,10 @@ h1 {
 .mini-panel,
 .featured-dish,
 .dish-card {
-  border: 1px solid rgba(234, 217, 201, 0.92);
+  border: 1px solid rgba(244, 205, 218, 0.96);
   border-radius: 8px;
-  background: rgba(255, 253, 248, 0.88);
-  box-shadow: 0 10px 28px rgba(83, 52, 34, 0.08);
+  background: rgba(255, 250, 253, 0.91);
+  box-shadow: 0 10px 28px rgba(191, 92, 130, 0.09);
 }
 
 .decision-panel {
@@ -249,7 +250,7 @@ h1 {
     radial-gradient(circle at 34% 38%, #fff 0 5px, transparent 6px),
     radial-gradient(circle at 64% 38%, #fff 0 5px, transparent 6px),
     linear-gradient(180deg, var(--pink), var(--rose));
-  box-shadow: 0 12px 22px rgba(200, 81, 87, 0.18);
+  box-shadow: 0 12px 22px rgba(233, 120, 154, 0.2);
 }
 
 .controls {
@@ -276,7 +277,7 @@ h1 {
   min-height: 38px;
   border: 1px solid var(--line);
   border-radius: 999px;
-  background: #fffaf3;
+  background: #fff7fb;
   color: var(--ink);
   padding: 0 14px;
   font-weight: 700;
@@ -284,8 +285,8 @@ h1 {
 
 .chip.is-active {
   border-color: transparent;
-  background: var(--ink);
-  color: #fffdf8;
+  background: var(--rose);
+  color: #fffafd;
 }
 
 .pick-area {
@@ -314,7 +315,7 @@ h1 {
   width: 160px;
   height: 160px;
   border-radius: 50%;
-  background: radial-gradient(circle, rgba(242, 184, 75, 0.34), transparent 64%);
+  background: radial-gradient(circle, rgba(255, 195, 215, 0.46), transparent 64%);
 }
 
 .dish-name {
@@ -333,12 +334,12 @@ h1 {
 .dish-photo {
   width: 100%;
   aspect-ratio: 1.12;
-  border: 8px solid #fff8ee;
+  border: 8px solid #fff7fb;
   border-radius: 8px;
   background:
     radial-gradient(circle at 30% 30%, rgba(255, 255, 255, 0.76), transparent 22%),
-    linear-gradient(135deg, rgba(247, 180, 189, 0.8), rgba(242, 184, 75, 0.78));
-  box-shadow: 0 12px 26px rgba(83, 52, 34, 0.12);
+    linear-gradient(135deg, rgba(255, 195, 215, 0.85), rgba(255, 232, 240, 0.85));
+  box-shadow: 0 12px 26px rgba(191, 92, 130, 0.12);
   object-fit: cover;
   transform: rotate(2deg);
 }
@@ -346,7 +347,7 @@ h1 {
 .dish-photo.placeholder {
   display: grid;
   place-items: center;
-  color: rgba(51, 37, 29, 0.72);
+  color: rgba(75, 43, 57, 0.72);
   font-size: 2.4rem;
   font-weight: 900;
 }
@@ -359,8 +360,8 @@ h1 {
 
 .tag {
   border-radius: 999px;
-  background: #f3e6d8;
-  color: #674735;
+  background: #ffe8f0;
+  color: #8a4560;
   padding: 6px 10px;
   font-size: 0.82rem;
   font-weight: 700;
@@ -387,12 +388,12 @@ h1 {
 
 .primary-button {
   background: var(--rose);
-  color: #fffdf8;
+  color: #fffafd;
 }
 
 .secondary-button {
   border: 1px solid var(--line);
-  background: #fffdf8;
+  background: #fffafd;
   color: var(--ink);
 }
 
@@ -446,12 +447,12 @@ h2 {
   border-radius: 8px;
   background:
     radial-gradient(circle at 72% 34%, rgba(255, 255, 255, 0.68), transparent 18%),
-    linear-gradient(135deg, rgba(226, 106, 77, 0.34), rgba(79, 139, 97, 0.3));
+    linear-gradient(135deg, rgba(255, 195, 215, 0.5), rgba(255, 232, 240, 0.9));
   object-fit: cover;
 }
 
 .dish-card:hover {
-  border-color: rgba(200, 81, 87, 0.5);
+  border-color: rgba(233, 120, 154, 0.58);
   transform: translateY(-2px);
 }
 
@@ -487,7 +488,7 @@ h2 {
 .favorite-item,
 .empty-state {
   border-radius: 8px;
-  background: #f8efe5;
+  background: #fff0f6;
   padding: 10px 12px;
   color: var(--muted);
   font-weight: 700;
@@ -545,7 +546,7 @@ input {
   min-height: 42px;
   border: 1px solid var(--line);
   border-radius: 8px;
-  background: #fffdf8;
+  background: #fffafd;
   color: var(--ink);
   padding: 0 12px;
   outline: 0;
@@ -559,7 +560,7 @@ input[type="file"] {
 
 input:focus {
   border-color: var(--blue);
-  box-shadow: 0 0 0 3px rgba(82, 124, 153, 0.16);
+  box-shadow: 0 0 0 3px rgba(233, 120, 154, 0.16);
 }
 
 @media (max-width: 860px) {

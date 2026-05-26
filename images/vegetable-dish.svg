@@ -1,27 +1,27 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="960" height="640" viewBox="0 0 960 640" role="img" aria-label="cartoon vegetable dish">
   <defs>
     <linearGradient id="veg-bg" x1="0" x2="1" y1="0" y2="1">
-      <stop offset="0" stop-color="#e3f5d9"/>
-      <stop offset="1" stop-color="#d1efe3"/>
+      <stop offset="0" stop-color="#ffe8f0"/>
+      <stop offset="1" stop-color="#ffd4e4"/>
     </linearGradient>
     <filter id="soft-shadow" x="-20%" y="-20%" width="140%" height="150%">
-      <feDropShadow dx="0" dy="18" stdDeviation="18" flood-color="#315d3d" flood-opacity=".18"/>
+      <feDropShadow dx="0" dy="18" stdDeviation="18" flood-color="#bd5c82" flood-opacity=".16"/>
     </filter>
   </defs>
   <rect width="960" height="640" rx="42" fill="url(#veg-bg)"/>
-  <circle cx="140" cy="116" r="52" fill="#fffaf0" opacity=".54"/>
-  <circle cx="806" cy="132" r="42" fill="#fffaf0" opacity=".42"/>
-  <circle cx="792" cy="510" r="84" fill="#fffaf0" opacity=".32"/>
+  <circle cx="140" cy="116" r="52" fill="#fffafd" opacity=".58"/>
+  <circle cx="806" cy="132" r="42" fill="#fffafd" opacity=".45"/>
+  <circle cx="792" cy="510" r="84" fill="#fffafd" opacity=".35"/>
   <g filter="url(#soft-shadow)">
-    <ellipse cx="480" cy="408" rx="292" ry="112" fill="#fffaf0"/>
-    <ellipse cx="480" cy="412" rx="224" ry="72" fill="#dcefcf"/>
-    <path d="M312 438c37-141 121-217 186-260 31 129-28 240-186 260z" fill="#55a866"/>
-    <path d="M414 454c4-143 80-221 155-271 30 122-16 237-155 271z" fill="#76c67b"/>
-    <path d="M502 451c45-123 129-177 218-205-6 113-72 196-218 205z" fill="#3d8f58"/>
-    <path d="M338 414c62-50 112-112 154-202M453 420c47-62 82-132 104-207M550 418c61-51 109-99 143-150" fill="none" stroke="#e8f8dc" stroke-width="16" stroke-linecap="round" opacity=".85"/>
+    <ellipse cx="480" cy="408" rx="292" ry="112" fill="#fffafd"/>
+    <ellipse cx="480" cy="412" rx="224" ry="72" fill="#ffe4ee"/>
+    <path d="M312 438c37-141 121-217 186-260 31 129-28 240-186 260z" fill="#79c984"/>
+    <path d="M414 454c4-143 80-221 155-271 30 122-16 237-155 271z" fill="#9bdd9e"/>
+    <path d="M502 451c45-123 129-177 218-205-6 113-72 196-218 205z" fill="#5ab874"/>
+    <path d="M338 414c62-50 112-112 154-202M453 420c47-62 82-132 104-207M550 418c61-51 109-99 143-150" fill="none" stroke="#f3ffe7" stroke-width="16" stroke-linecap="round" opacity=".85"/>
     <circle cx="332" cy="292" r="22" fill="#f2c84b"/>
-    <circle cx="660" cy="392" r="24" fill="#ef624e"/>
+    <circle cx="660" cy="392" r="24" fill="#ff7fa4"/>
     <circle cx="606" cy="277" r="18" fill="#fff0c6"/>
-    <path d="M288 462c101 50 261 58 391 0" fill="none" stroke="#bdd8aa" stroke-width="18" stroke-linecap="round" opacity=".55"/>
+    <path d="M288 462c101 50 261 58 391 0" fill="none" stroke="#ffd0df" stroke-width="18" stroke-linecap="round" opacity=".55"/>
   </g>
 </svg>
